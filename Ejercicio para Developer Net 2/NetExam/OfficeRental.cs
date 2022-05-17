@@ -6,18 +6,19 @@
     using NetExam.Abstractions;
     using NetExam.Dto;
     using NetExam.Entities;
+    using NetExam.Repository;
 
     public class OfficeRental : IOfficeRental
     {
-        public List<Location> _locations { get; set; }
-        public List<Office> _offices { get; set; }
-        public List<Booking> _booking { get; set; }
+        public Repository<Location> LocationRepository;
+        public Repository<Office> OfficeRepository;
+        public Repository<Booking> BookingRepository;
 
         public OfficeRental()
         {
-            _locations = new List<Location>();
-            _offices = new List<Office>();
-            _booking = new List<Booking>();
+            LocationRepository = new Repository<Location>();
+            OfficeRepository = new Repository<Office>();
+            BookingRepository = new Repository<Booking>();
         }
 
         #region Interface Implemented Methods
@@ -28,14 +29,14 @@
             {
                 if (locationSpecs != null)
                 {
-                    if (!ValidateIfLocationNameExist(locationSpecs.Name))
+                    if (!ValidateLocationNameAlreadyExists(locationSpecs.Name))
                     {
                         Location location = (Location)locationSpecs;
-                        _locations.Add(location);
+                        LocationRepository.Add(location);
                     }
                     else
                     {
-                        throw new ArgumentException(nameof(locationSpecs.Name));
+                        throw new ArgumentException("LocationName already exists");
                     }
                 }
             }
@@ -58,7 +59,7 @@
             {
                 if (officeSpecs != null)
                 {
-                    if (ValidateIfLocationNameExist(officeSpecs.LocationName))
+                    if (ValidateLocationNameAlreadyExists(officeSpecs.LocationName))
                     {
                         Office office = (Office)officeSpecs;
 
@@ -66,11 +67,11 @@
                         location.Offices.Add(office);
                         office.Location = location;
 
-                        _offices.Add(office);
+                        OfficeRepository.Add(office);
                     }
                     else
                     {
-                        throw new ArgumentException(nameof(officeSpecs.Name));
+                        throw new ArgumentException("Adding Office to unexisting Location");
                     }
                 }
             }
@@ -91,14 +92,14 @@
                     {
                         Booking booking = (Booking)bookingRequest;
 
-                        _booking.Add(booking);
-                        Office office = _offices.FirstOrDefault(x => x.Name.Contains(bookingRequest.OfficeName));
+                        BookingRepository.Add(booking);
+                        Office office = OfficeRepository.GetAll().FirstOrDefault(x => x.Name.Contains(bookingRequest.OfficeName));
 
                         office.Bookings.Add(booking);
                     }
                     else
                     {
-                        throw new ArgumentException("Office not available");
+                        throw new ArgumentException("Booking an already taken Office");
                     }
                 }
             }
@@ -137,7 +138,7 @@
             {
                 List<ILocation> locations = new List<ILocation>();
 
-                foreach (var loc in _locations)
+                foreach (var loc in LocationRepository.GetAll())
                 {
                     locations.Add(loc);
                 }
@@ -212,9 +213,9 @@
 
         #region Private Methods
 
-        private bool ValidateIfLocationNameExist(string locationName)
+        private bool ValidateLocationNameAlreadyExists(string locationName)
         {
-            bool exist = _locations.Any(x => x.Name.Contains(locationName));
+            bool exist = LocationRepository.GetAll().Any(x => x.Name.Contains(locationName));
 
             if (exist)
             {
@@ -278,6 +279,7 @@
         private IEnumerable<Office> FilterOffices(SuggestionRequest suggestionRequest)
         {
             IEnumerable<Office> offices = new List<Office>();
+            var _offices = OfficeRepository.GetAll();
 
             if (suggestionRequest.PreferedNeigborHood != null)
             {
@@ -305,12 +307,12 @@
 
         private Location GetLocationByName(string LocationName)
         {
-            return _locations.FirstOrDefault(x => x.Name.Contains(LocationName));
+            return LocationRepository.GetAll().FirstOrDefault(x => x.Name.Contains(LocationName));
         }
 
         private IEnumerable<Office> GetOfficesByLocationName(string locationName)
         {
-            return _offices.Where(x => x.LocationName.Contains(locationName));
+            return OfficeRepository.GetAll().Where(x => x.LocationName.Contains(locationName));
         }
 
         private Office GetOfficeByName(string locationName, string officeName)

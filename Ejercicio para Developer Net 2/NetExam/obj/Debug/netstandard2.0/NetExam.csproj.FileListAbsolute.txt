@@ -8,3 +8,13 @@ C:\Users\facur\OneDrive\Escritorio\Ejercicio para Developer Net 2\Ejercicio para
 C:\Users\facur\OneDrive\Escritorio\Ejercicio para Developer Net 2\Ejercicio para Developer Net 2\NetExam\bin\Debug\netstandard2.0\NetExam.pdb
 C:\Users\facur\OneDrive\Escritorio\Ejercicio para Developer Net 2\Ejercicio para Developer Net 2\NetExam\obj\Debug\netstandard2.0\NetExam.dll
 C:\Users\facur\OneDrive\Escritorio\Ejercicio para Developer Net 2\Ejercicio para Developer Net 2\NetExam\obj\Debug\netstandard2.0\NetExam.pdb
+C:\Users\facur\OneDrive\Documentos\Visual Studio 2022\Projects\Urbetrack\Ejercicio para Developer Net 2\NetExam\obj\Debug\netstandard2.0\NetExam.csproj.AssemblyReference.cache
+C:\Users\facur\OneDrive\Documentos\Visual Studio 2022\Projects\Urbetrack\Ejercicio para Developer Net 2\NetExam\obj\Debug\netstandard2.0\NetExam.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\facur\OneDrive\Documentos\Visual Studio 2022\Projects\Urbetrack\Ejercicio para Developer Net 2\NetExam\obj\Debug\netstandard2.0\NetExam.AssemblyInfoInputs.cache
+C:\Users\facur\OneDrive\Documentos\Visual Studio 2022\Projects\Urbetrack\Ejercicio para Developer Net 2\NetExam\obj\Debug\netstandard2.0\NetExam.AssemblyInfo.cs
+C:\Users\facur\OneDrive\Documentos\Visual Studio 2022\Projects\Urbetrack\Ejercicio para Developer Net 2\NetExam\obj\Debug\netstandard2.0\NetExam.csproj.CoreCompileInputs.cache
+C:\Users\facur\OneDrive\Documentos\Visual Studio 2022\Projects\Urbetrack\Ejercicio para Developer Net 2\NetExam\obj\Debug\netstandard2.0\NetExam.dll
+C:\Users\facur\OneDrive\Documentos\Visual Studio 2022\Projects\Urbetrack\Ejercicio para Developer Net 2\NetExam\obj\Debug\netstandard2.0\NetExam.pdb
+C:\Users\facur\OneDrive\Documentos\Visual Studio 2022\Projects\Urbetrack\Ejercicio para Developer Net 2\NetExam\bin\Debug\netstandard2.0\NetExam.deps.json
+C:\Users\facur\OneDrive\Documentos\Visual Studio 2022\Projects\Urbetrack\Ejercicio para Developer Net 2\NetExam\bin\Debug\netstandard2.0\NetExam.dll
+C:\Users\facur\OneDrive\Documentos\Visual Studio 2022\Projects\Urbetrack\Ejercicio para Developer Net 2\NetExam\bin\Debug\netstandard2.0\NetExam.pdb
