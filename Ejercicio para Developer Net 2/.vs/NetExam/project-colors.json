@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "c2717936-fcf4-45ad-9222-3dacc1b2bd73": {
+      "ProjectGuid": "c2717936-fcf4-45ad-9222-3dacc1b2bd73",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 0
+    },
+    "ce4f0e24-ac66-48a1-b616-9d2c46b30d95": {
+      "ProjectGuid": "ce4f0e24-ac66-48a1-b616-9d2c46b30d95",
+      "DisplayName": "NetExam",
+      "ColorIndex": 1
+    },
+    "dbafb4e5-f3dd-4c41-b29a-c7f821d33036": {
+      "ProjectGuid": "dbafb4e5-f3dd-4c41-b29a-c7f821d33036",
+      "DisplayName": "NetExam.Test",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 3
+}
