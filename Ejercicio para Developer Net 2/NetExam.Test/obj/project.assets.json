@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
+    ".NETCoreApp,Version=v3.1": {
       "Microsoft.CodeCoverage/16.7.1": {
         "type": "package",
         "compile": {
@@ -5591,7 +5591,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net6.0": [
+    ".NETCoreApp,Version=v3.1": [
       "Microsoft.NET.Test.Sdk >= 16.7.1",
       "NetExam >= 1.0.0",
       "xunit >= 2.4.1",
@@ -5615,15 +5615,15 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0"
+        "netcoreapp3.1"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
             "C:\\Users\\facur\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\Urbetrack\\Ejercicio para Developer Net 2\\NetExam\\NetExam.csproj": {
               "projectPath": "C:\\Users\\facur\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\Urbetrack\\Ejercicio para Developer Net 2\\NetExam\\NetExam.csproj"
@@ -5638,8 +5638,8 @@
       }
     },
     "frameworks": {
-      "net6.0": {
-        "targetAlias": "net6.0",
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
@@ -5666,6 +5666,20 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.1.10, 3.1.10]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[3.1.0, 3.1.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[3.1.0, 3.1.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
