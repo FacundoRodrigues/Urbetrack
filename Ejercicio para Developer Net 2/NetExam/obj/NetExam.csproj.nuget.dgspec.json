@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\facur\\OneDrive\\Escritorio\\Ejercicio para Developer Net 2\\Ejercicio para Developer Net 2\\NetExam\\NetExam.csproj": {}
+    "C:\\Users\\facur\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\Urbetrack\\Ejercicio para Developer Net 2\\NetExam\\NetExam.csproj": {}
   },
   "projects": {
-    "C:\\Users\\facur\\OneDrive\\Escritorio\\Ejercicio para Developer Net 2\\Ejercicio para Developer Net 2\\NetExam\\NetExam.csproj": {
+    "C:\\Users\\facur\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\Urbetrack\\Ejercicio para Developer Net 2\\NetExam\\NetExam.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\facur\\OneDrive\\Escritorio\\Ejercicio para Developer Net 2\\Ejercicio para Developer Net 2\\NetExam\\NetExam.csproj",
+        "projectUniqueName": "C:\\Users\\facur\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\Urbetrack\\Ejercicio para Developer Net 2\\NetExam\\NetExam.csproj",
         "projectName": "NetExam",
-        "projectPath": "C:\\Users\\facur\\OneDrive\\Escritorio\\Ejercicio para Developer Net 2\\Ejercicio para Developer Net 2\\NetExam\\NetExam.csproj",
+        "projectPath": "C:\\Users\\facur\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\Urbetrack\\Ejercicio para Developer Net 2\\NetExam\\NetExam.csproj",
         "packagesPath": "C:\\Users\\facur\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\facur\\OneDrive\\Escritorio\\Ejercicio para Developer Net 2\\Ejercicio para Developer Net 2\\NetExam\\obj\\",
+        "outputPath": "C:\\Users\\facur\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\Urbetrack\\Ejercicio para Developer Net 2\\NetExam\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\facur\\AppData\\Roaming\\NuGet\\NuGet.Config",

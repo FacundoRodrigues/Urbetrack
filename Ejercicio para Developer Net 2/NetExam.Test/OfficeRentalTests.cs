@@ -22,7 +22,6 @@
 
         protected IOfficeRental OfficeRental = new OfficeRental();
 
-        //done
         [Fact]
         public void ShouldAddALocation()
         {
@@ -31,7 +30,6 @@
             Assert.Equal(LocationName, OfficeRental.GetLocations().Single().Name);
         }
 
-        //done
         [Fact]
         public void ShouldThrowWhenLocationNameAlreadyExists()
         {
@@ -43,7 +41,6 @@
             });
         }
 
-        //done
         [Fact]
         public void ShouldAddOffice()
         {
@@ -54,7 +51,6 @@
             Assert.Equal(OfficeName, OfficeRental.GetOffices(LocationName).Single().Name);
         }
 
-        //done
         [Fact]
         public void ShouldThrowWhenAddingOfficeToUnexistingLocation()
         {
@@ -64,7 +60,6 @@
             });
         }
 
-        //done
         [Fact]
         public void ShouldBookAnOffice()
         {
@@ -76,7 +71,6 @@
             Assert.Equal(BookingDate, OfficeRental.GetBookings(LocationName, OfficeName).Single().DateTime);
         }
 
-        //done
         [Fact]
         public void ShouldThrowWhenBookingAnAlreadyTakenOffice()
         {
@@ -90,13 +84,12 @@
             });
         }
 
-        //done
         [Theory]
-        [InlineData(18, "Palermo", null, "Centro 2", "1")] //3ro
-        [InlineData(6, "Centro", new[] { "wi-fi", "tv" }, "Centro 2", "3")] //4to
-        [InlineData(2, null, null, "Centro 1", "4")] //2do
-        [InlineData(2, null, new[] { "proyector", "catering" }, "Centro 2", "1")] //1ro
-        [InlineData(30, null, null, null, null)] //5to
+        [InlineData(18, "Palermo", null, "Centro 2", "1")]
+        [InlineData(6, "Centro", new[] { "wi-fi", "tv" }, "Centro 2", "3")]
+        [InlineData(2, null, null, "Centro 1", "4")]
+        [InlineData(2, null, new[] { "proyector", "catering" }, "Centro 2", "1")]
+        [InlineData(30, null, null, null, null)]
         public void ShouldGiveOfficeSuggestions(int capacityNeeded, string preferedNeigborHood, string[] resourcesNeeded, string expectedLocation, string expectedOffice)
         {
             OfficeRental.AddLocation(new LocationSpecs("Centro 1", "Centro"));

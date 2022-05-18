@@ -11,7 +11,7 @@
         public string Name { get; set; }
         public int MaxCapacity { get; set; }
         public IEnumerable<string> AvailableResources { get; set; }
-        public Location Location { get; set; } //debería tener composicion acá?
+        public Location Location { get; set; }
         public List<Booking> Bookings { get; set; }
 
         public static explicit operator Office(OfficeSpecs officeSpecs)
