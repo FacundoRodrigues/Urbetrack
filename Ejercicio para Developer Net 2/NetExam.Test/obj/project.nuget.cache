@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "RU1XHV/XT9fXrmWtPKMIE6Rlr76GiDg09XcZ4mv/poOyrUFgOAnQxSiHg3XwnstmDRTo4jNeRxzv8iO316tm9Q==",
+  "dgSpecHash": "2IFrzI1F0K+cYafY1aaOfcmGxKAc35lOq0Kl5PyXJzSzfNVWWdcclTMBglAJOFxPjweHd65l63FDJDuf6Ky++A==",
   "success": true,
   "projectFilePath": "C:\\Users\\facur\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\Urbetrack\\Ejercicio para Developer Net 2\\NetExam.Test\\NetExam.Test.csproj",
   "expectedPackageFiles": [
@@ -93,7 +93,10 @@
     "C:\\Users\\facur\\.nuget\\packages\\xunit.core\\2.4.1\\xunit.core.2.4.1.nupkg.sha512",
     "C:\\Users\\facur\\.nuget\\packages\\xunit.extensibility.core\\2.4.1\\xunit.extensibility.core.2.4.1.nupkg.sha512",
     "C:\\Users\\facur\\.nuget\\packages\\xunit.extensibility.execution\\2.4.1\\xunit.extensibility.execution.2.4.1.nupkg.sha512",
-    "C:\\Users\\facur\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.3\\xunit.runner.visualstudio.2.4.3.nupkg.sha512"
+    "C:\\Users\\facur\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.3\\xunit.runner.visualstudio.2.4.3.nupkg.sha512",
+    "C:\\Users\\facur\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\facur\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\facur\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
   ],
   "logs": []
 }
